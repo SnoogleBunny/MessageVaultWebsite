@@ -3,16 +3,12 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 import Button from '../Button/Button';
-import { useObserver } from 'mobx-react';
-
-import StoreContext from '../../store';
 
 const Navbar = () => {
 
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
-    const store = React.useContext(StoreContext);
 
     const handleClick = () => {
         setClick(!click);
