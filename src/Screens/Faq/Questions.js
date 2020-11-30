@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import LazyHero from 'react-lazy-hero/lib/LazyHero';
 import Faq from './Faq';
-import faqHero from '../../assets/faq-hero.png'
+import faqHero from '../../assets/faq-hero.png';
+import Footer from '../shared-components/Footer/Footer';
 
 export default function Questions() {
     const [faq, setFaq] = useState([
@@ -46,7 +47,7 @@ export default function Questions() {
 
     return (
         <div className="Questions">
-            <LazyHero color="black" imageSrc={faqHero}>
+            <LazyHero color="black" imageSrc={faqHero} minHeight="15vh">
                 <h1 style={{color: 'white'}}>Frequently Asked Questions</h1>
             </LazyHero>
             {faq.map((faq, id) => (
@@ -54,6 +55,9 @@ export default function Questions() {
                     <Faq faq={faq} index={id} toggleFaq={toggleFaq}/>
                 </div>
             ))}
+
+            <Footer />
+
         </div>
     )
 }

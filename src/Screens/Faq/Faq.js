@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
-
-import LazyHero from 'react-lazy-hero';
-
+import React from 'react';
 import './Faq.css';
-import arrow_down from '../../assets/arrow_down.svg';
 
 export default function Faq({ faq, index, toggleFaq }) {
     return (
-        <div   
+        <div
             className={"faq " + (faq.open ? 'open' : '')}
             key={index}
             onClick={() => toggleFaq(index)}

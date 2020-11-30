@@ -31,6 +31,14 @@
     margin: 0 1rem;
     border-radius: 10px;
   }
+
+  .cards__items__tall {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+    height: 300px;
+  }
   
   .cards__item__link {
     display: flex;

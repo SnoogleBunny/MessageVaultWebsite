@@ -1,6 +1,6 @@
 import React from 'react';
 
-import heroVideo from '../../../assets/video-2.mp4';
+import heroVideo from '../../../assets/video-4.mp4';
 import Button from '../Button/Button';
 
 import './HeroSection.css';
