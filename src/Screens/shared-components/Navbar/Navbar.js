@@ -3,10 +3,16 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 import Button from '../Button/Button';
+import { useObserver } from 'mobx-react';
+
+import StoreContext from '../../store';
+
 const Navbar = () => {
 
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
+
+    const store = React.useContext(StoreContext);
 
     const handleClick = () => {
         setClick(!click);
@@ -29,9 +35,10 @@ const Navbar = () => {
 
     window.addEventListener('resize', showButton);
 
-    return (
+    return useObserver(() => (
         <>
             <nav className="navbar">
+                {console.log(store.id)}
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                         TheMessageVault <i className="fab fa-typo3" />
@@ -61,11 +68,11 @@ const Navbar = () => {
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>Sign Up</Button>}
+                    {button && <Button buttonStyle='btn--outline'>Login / Sign Up</Button>}
                 </div>
             </nav>
         </>
-    )
+    ));
 }
 
 export default Navbar;

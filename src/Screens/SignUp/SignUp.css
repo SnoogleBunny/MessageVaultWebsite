@@ -1,0 +1,42 @@
+.login-card {
+    display: flex;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card-container {
+    height: auto;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+}
+
+.login-card-container > img {
+    height: 150px;
+    width: auto;
+}
+
+.login-card-container > h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 16px;
+}
+
+.login-card-container > form > input {
+    padding: 8px 20px;
+    border-radius: 2px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border: 1px solid #242424;
+}

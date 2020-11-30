@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Questions from './Screens/Faq/Questions';
 import Navbar from './Screens/shared-components/Navbar/Navbar';
@@ -15,7 +16,6 @@ import Pricing from './Screens/Pricing/Pricing';
 
 const App = () => {
   return (
-    <>
       <Router>
         <Navbar />
         <Switch>
@@ -27,7 +27,6 @@ const App = () => {
           <Route path="/sign-up" component={SignUp} />
         </Switch>
       </Router>
-    </>
   );
 }
 

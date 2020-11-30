@@ -19,6 +19,7 @@
   padding-right: 80px;
 
   transition: all 0.4s ease;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .faqs .faq .faq-question::after {
@@ -43,6 +44,8 @@
   max-height: 0;
   overflow-y: hidden;
   transition: all 0.4s ease;
+  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .faqs .faq.open .faq-question {

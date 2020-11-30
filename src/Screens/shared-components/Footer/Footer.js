@@ -15,8 +15,8 @@ function Footer() {
                 </p>
                 <div className="input-areas">
                     <form>
-                        <input className="footer-input" type="email" name="email" placeholder="Your Email" classname="footer-input" />
-                        <input className="footer-input" type="text" name="inquiry" placeholder="Your Inquiry" classname="footer-input" />
+                        <input className="footer-input" type="email" name="email" placeholder="Your Email" />
+                        <input className="footer-input" type="text" name="inquiry" placeholder="Your Inquiry" />
                         <Button buttonStyle='btn--outline'>Let me know</Button>
                     </form>
                 </div>
