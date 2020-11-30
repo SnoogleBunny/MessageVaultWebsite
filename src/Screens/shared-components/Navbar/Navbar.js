@@ -35,10 +35,9 @@ const Navbar = () => {
 
     window.addEventListener('resize', showButton);
 
-    return useObserver(() => (
+    return (
         <>
             <nav className="navbar">
-                {console.log(store.id)}
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                         TheMessageVault <i className="fab fa-typo3" />
@@ -72,7 +71,7 @@ const Navbar = () => {
                 </div>
             </nav>
         </>
-    ));
+    );
 }
 
 export default Navbar;
