@@ -63,7 +63,7 @@ const Navbar = () => {
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>Login / Sign Up</Button>}
+                    {button && <Button href="/sign-up" buttonStyle='btn--outline'>Login</Button>}
                 </div>
             </nav>
         </>

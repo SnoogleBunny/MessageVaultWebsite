@@ -52,7 +52,7 @@ export default function Questions() {
             </LazyHero>
             {faq.map((faq, id) => (
                 <div className="faqs">
-                    <Faq faq={faq} index={id} toggleFaq={toggleFaq}/>
+                    <Faq key={id} faq={faq} index={id} toggleFaq={toggleFaq}/>
                 </div>
             ))}
 
