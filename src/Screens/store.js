@@ -1,9 +1,9 @@
 import React from 'react';
-import { useLocalStore } from 'mobx-react';
+import { useLocalObservable } from 'mobx-react';
 
 
 const StoreProvider = ({children}) => {
-  const store = useLocalStore(() => ({
+  const store = useLocalObservable(() => ({
     id: '123',
     setId: id => {
       store.id = id;

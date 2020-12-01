@@ -19,7 +19,7 @@ import Axios from 'axios';
                 password: password,
             })
             .then((res) => {
-                if(res.data < 20) {
+                if(res.data.length() < 20) {
                     setError(res.data);
                 }
                 if(res.data.length() > 20) {
@@ -43,7 +43,7 @@ import Axios from 'axios';
                         <p style={{color: 'red'}}>{error}</p>
                         <input type="email" name="email" placeholder="Your Email" onChange={e => setEmail(e.target.value)} />
                         <input type="password" name="password" placeholder="Password" minLength="8" onChange={e => setPassword(e.target.value)} />
-                        <Button buttonSize="btn--large" buttonStyle="btn--primary" type="submit" onClick={handleClick}>Submit</Button>
+                        <Button href="/" buttonSize="btn--large" buttonStyle="btn--primary" type="submit" onClick={handleClick}>Submit</Button>
                     </form>
                 </div>
             </div>

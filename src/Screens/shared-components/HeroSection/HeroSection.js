@@ -13,8 +13,8 @@ function HeroSection () {
             <h1>CHERISH THE LITTLE THINGS</h1>
             <p>What are you waiting for?</p>
             <div className="hero-btns">
-                <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>Get Started</Button>
-                <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>Watch Trailer <i className='far fa-play-circle' /></Button>
+                <Button href="/sign-up" className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>Get Started</Button>
+                <Button href="/youtube" className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>Watch Trailer <i className='far fa-play-circle' /></Button>
             </div>
         </div>
     )

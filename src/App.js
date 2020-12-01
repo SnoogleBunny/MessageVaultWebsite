@@ -25,6 +25,7 @@ const App = () => {
           <Route path="/products" component={Products} />
           <Route path="/pricing" component={Pricing} />
           <Route path="/sign-up" component={SignUp} />
+          <Route path="/youtube" component={() => (window.location = "https://www.youtube.com/watch?v=-SL9KRvzVmo")} />
         </Switch>
       </Router>
   );
